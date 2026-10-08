@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katya Delgadillo</title>
+  <meta name="description" content="Katya Delgadillo: incoming UC Berkeley student, Head Tutor, astronomy researcher, and Editor-in-Chief." />
+  <meta property="og:title" content="Katya Delgadillo" />
+  <meta property="og:description" content="Incoming UC Berkeley student with experience in tutoring, astrophysics research, and editorial leadership." />
+  <meta property="og:image" content="assets/katya-square.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%237c5cf0'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>K</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- HEADER -->
+    <header class="header-row">
+      <div class="profile">
+        <img src="assets/katya-square.jpg" alt="Portrait of Katya Delgadillo" width="200" height="200" />
+      </div>
+      <div class="top-desc">
+        <h1 class="name">Katya Delgadillo</h1>
+        <p class="tagline">
+          I'm an incoming student at <span class="blue">UC Berkeley</span>, with a background in
+          peer instruction, astrophysics research, and editorial leadership.
+        </p>
+      </div>
+    </header>
+
+    <div class="callout">
+      <p>
+        <strong>This fall</strong> I am beginning my undergraduate studies at
+        <span class="hl-blue">UC Berkeley</span> (Class of 2030), after graduating from
+        <span class="hl-purple">The Thacher School</span> with a 3.98 unweighted GPA.
+      </p>
+    </div>
+
+    <nav class="links">
+      <a class="hl-purple" href="mailto:katy.del224@gmail.com">email</a>
+      <a class="hl-blue" href="assets/Katya_Delgadillo_Resume.pdf" target="_blank" rel="noopener">resume</a>
+      <a class="hl-lilac" href="#research">research</a>
+      <a class="hl-sky" href="#experience">experience</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <hr />
+      <h5 class="title">About Me</h5>
+      <p>
+        Since 2020 I have worked in peer instruction and academic mentorship. As
+        <span class="hl-purple">Head Tutor</span> at Cope Middle School and The Thacher School, I train and supervise
+        a team of <b>63 tutors</b> serving approximately <b>250 students</b> in mathematics, physics, and writing.
+      </p>
+      <p>
+        My research examines <a class="hl-blue" href="#research">orbital decay in Hot Jupiters</a>. Over a multi-year
+        independent study, I collected observational data at an on-campus observatory and analyzed it using Python and
+        Markov chain Monte Carlo methods.
+      </p>
+      <p>
+        I have also served as <span class="hl-lilac">Editor-in-Chief</span> of <i>The Thacher Notes</i>, as a Dormitory
+        Prefect, and as Dance Captain at Salt Dance Studio. Outside of academics, I ride Western-style and perform with the
+        Thacher Dance Ensemble.
+      </p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <hr />
+      <h5 class="title">Research</h5>
+      <div class="entry">
+        <p class="entry-title">
+          <span class="hl-purple">Orbital Decay in Hot Jupiters</span>
+          <b>[</b><a class="hl-gray" href="#sim">model</a>, <span class="muted">python</span>, <span class="muted">mcmc</span><b>]</b>
+        </p>
+        <p class="meta">
+          <b>Katya Delgadillo</b>, with two fellow student researchers<br />
+          The Thacher School Observatory, 2023 – 2026
+        </p>
+        <p class="desc">
+          A multi-year independent study testing for period decay in Hot Jupiter systems using self-collected transit
+          observations. Concluded with a 20-minute presentation on methodology and findings.
+        </p>
+      </div>
+
+      <figure class="sim" id="sim">
+        <canvas id="orbitCanvas" aria-label="Illustrative model of a planet transiting its star with a light curve below"></canvas>
+        <figcaption>
+          <span>Illustrative model: each transit dims the star; the period shortens as the orbit decays.</span>
+          <span class="readouts">
+            P = <b id="period">—</b> · transits: <b id="transits">0</b>
+            <label class="speed">speed <input type="range" id="warp" min="1" max="12" value="2" /></label>
+          </span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <hr />
+      <h5 class="title">Experience <span class="toggle">[<a href="#" data-show="selected" class="active">selected</a>, <a href="#" data-show="all">all</a>]</span></h5>
+
+      <div class="entry">
+        <p class="entry-title"><span class="hl-purple">Head Tutor</span> · Cope Middle School &amp; The Thacher School</p>
+        <p class="meta">August 2020 – 2026</p>
+        <p class="desc">Train and supervise 63 tutors, coordinating with faculty to deliver support in mathematics, physics, and writing to approximately 250 students. Support elementary school teachers with classroom instruction. Students reported grade improvements in mathematics from Cs to As.</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title"><span class="hl-blue">Astronomy Researcher &amp; Intern</span> · The Thacher School</p>
+        <p class="meta">2023 – 2026</p>
+        <p class="desc">Investigated orbital decay in Hot Jupiters using data from an operational on-campus observatory, applying Python and MCMC chains for analysis. Collaborated with two fellow researchers across a multi-year independent study.</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title"><span class="hl-lilac">Editor-in-Chief</span> (formerly Junior Editor) · The Thacher Notes</p>
+        <p class="meta">August 2023 – 2026</p>
+        <p class="desc">Lead weekly editorial meetings and oversee the full publication workflow. Launched a social media platform and writer curriculum to broaden student engagement with journalism. Coach student writers through revision.</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title"><span class="hl-sky">Dormitory Prefect</span> · The Thacher School</p>
+        <p class="meta">2025 – 2026</p>
+        <p class="desc">Selected by faculty to mentor six sophomore students, plan residential events, and resolve day-to-day dormitory issues in partnership with the faculty head.</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title"><span class="hl-purple">Dance Captain</span> · Salt Dance Studio &amp; The Thacher School</p>
+        <p class="meta">June 2022 – 2026</p>
+        <p class="desc">Choreograph and perform original pieces across West African, modern, contemporary, jazz, and ballet styles in ten showcases per year. Direct rehearsals for up to 15 dancers.</p>
+      </div>
+      <div class="entry extra">
+        <p class="entry-title"><span class="hl-gray">Volunteer</span> · LANGO Foreign Language Camp</p>
+        <p class="meta">2025 – 2026</p>
+        <p class="desc">Supported language and culture instruction for children ages 3–10 through crafts, games, and song.</p>
+      </div>
+      <div class="entry extra">
+        <p class="entry-title"><span class="hl-gray">Group Leader &amp; Games Leader</span> · Vacation Bible School, Redlands</p>
+        <p class="meta">2025</p>
+        <p class="desc">Supervised 2nd and 3rd grade campers across three-hour daily sessions and ran the all-camp game station; contributed to camp setup and takedown logistics.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <hr />
+      <h5 class="title">Education</h5>
+      <div class="edu-row"><p><b>University of California, Berkeley</b><br /><span class="muted">Incoming Student</span></p><p class="meta">2030</p></div>
+      <div class="edu-row"><p><b>The Thacher School</b><br /><span class="muted">GPA: 3.98 Unweighted / 4.68 Weighted</span></p><p class="meta">2026</p></div>
+    </section>
+
+    <!-- HONORS -->
+    <section class="section" id="honors">
+      <hr />
+      <h5 class="title">Honors &amp; Awards</h5>
+      <ul class="arrows more-list">
+        <li>National Recognition Award for Outstanding Academic Achievement, Rural and Small-Town Recognition Award <span class="muted">(2025)</span></li>
+        <li>Commendations in History and Mathematics, The Thacher School <span class="muted">(2026)</span></li>
+        <li>Commendations in English, History, and Mathematics, The Thacher School <span class="muted">(2025)</span></li>
+        <li>Commendations in English, History, Mathematics, Science, and the Arts, The Thacher School <span class="muted">(2024)</span></li>
+        <li>Scholar-Athlete Award, Redlands High School <span class="muted">(2023)</span></li>
+        <li class="extra">Outstanding Academic Award, Top 25 Freshman, Redlands High School <span class="muted">(2023)</span></li>
+        <li class="extra">Academic Success in Mathematics, Redlands High School <span class="muted">(2023)</span></li>
+        <li class="extra">Thacher Dance Awards: Acro Queen and Most Improved <span class="muted">(2024)</span></li>
+        <li class="extra">Outstanding Student in Integrated Math II Honors, Redlands High School <span class="muted">(2022)</span></li>
+        <li class="extra">Kiwanis Hope of America Scholarship, Cope Middle School <span class="muted">(2022)</span></li>
+        <li class="extra">All Around Champion, Flip Out Meet <span class="muted">(2019)</span></li>
+        <li class="more-li"><a href="#" class="more-toggle hl-gray">more ↓</a></li>
+      </ul>
+    </section>
+
+    <!-- PROGRAMS & ACTIVITIES -->
+    <section class="section" id="programs">
+      <hr />
+      <h5 class="title">Programs &amp; Activities</h5>
+      <div class="cols">
+        <div>
+          <p class="col-head">Enrichment programs</p>
+          <ul class="arrows compact">
+            <li>Exploring Frontiers, University of Chicago <span class="muted">(2024)</span></li>
+            <li>Rice ELITE Tech Camp: Robotic Engineering <span class="muted">(2024)</span></li>
+            <li>Rice ELITE Tech Camp: 3D Modeling &amp; Printing <span class="muted">(2024)</span></li>
+            <li>Journalism &amp; Media in the Digital Age, Georgetown <span class="muted">(2023)</span></li>
+            <li>RUSD–UCR Summer AI Academy <span class="muted">(2023)</span></li>
+            <li>RUSD–UCR Summer Engineering Academy <span class="muted">(2022)</span></li>
+            <li>STEM Conference for Eighth-Grade Girls <span class="muted">(2022)</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="col-head">Memberships &amp; athletics</p>
+          <ul class="arrows compact">
+            <li>California Scholarship Federation <span class="muted">(2022–)</span></li>
+            <li>National Society of High School Scholars <span class="muted">(2023–)</span></li>
+            <li>Thacher Dance Ensemble <span class="muted">(2024–)</span></li>
+            <li>Western Horseback Riding <span class="muted">(2022–)</span></li>
+            <li>Redlands Gymnastics Club Competition Team <span class="muted">(2017–2021)</span></li>
+            <li>10 East Cross Country &amp; Track League <span class="muted">(2021–2023)</span></li>
+            <li>JV Track &amp; Field; JV Basketball <span class="muted">(2023)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section footer">
+      <hr />
+      <p>
+        I welcome inquiries about tutoring, research, and academic opportunities. Please reach out at
+        <a class="hl-purple" href="mailto:katy.del224@gmail.com">katy.del224@gmail.com</a>.
+      </p>
+      <p class="muted small">Last updated October 2026.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
